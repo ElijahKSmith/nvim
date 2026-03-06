@@ -1,7 +1,7 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
-    opts = function (plugin, opts)
+    opts = function(plugin, opts)
       if not opts.window then
         opts.window = {}
       end
@@ -14,8 +14,8 @@ return {
       opts.window.width = "30"
 
       opts.filesystem.filtered_items = {
-        visible = true
+        visible = true,
       }
-    end
-  }
+    end,
+  },
 }
