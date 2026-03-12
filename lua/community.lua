@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
   { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.typescript" }
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.recipes.picker-lsp-mappings" },
 }
