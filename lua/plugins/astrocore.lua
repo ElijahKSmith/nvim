@@ -52,6 +52,34 @@ return {
         -- This can be found in the `lua/lazy_setup.lua` file
       },
     },
+    sessions = {
+      autosave = {
+        last = true,
+        cwd = true
+      },
+      ignore = {
+        dirs = {},
+        filetypes = {},
+        buftypes = {},
+      },
+    },
+    autocmds = {
+      restore_session = {
+        {
+          event = "VimEnter",
+          desc = "Restore previous directory session if neovim opened with no arguments",
+          nested = true,
+          callback = function()
+            if vim.fn.argc(-1) == 0 then
+              require("resession").load(
+                vim.fn.getcwd(),
+                { dir = "dirsession", silence_errors = true }
+              )
+            end
+          end,
+        },
+      },
+    },
     -- Mappings can be configured through AstroCore as well.
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
