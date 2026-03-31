@@ -12,4 +12,5 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.recipes.picker-lsp-mappings" },
+  { import = "astrocommunity.recipes.ai" },
 }
