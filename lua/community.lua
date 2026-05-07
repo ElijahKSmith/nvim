@@ -13,4 +13,5 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.recipes.picker-lsp-mappings" },
   { import = "astrocommunity.recipes.ai" },
+  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
 }
